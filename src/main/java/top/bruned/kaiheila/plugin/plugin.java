@@ -8,12 +8,13 @@ public class plugin extends JavaPlugin {
     @Override
     public void onLoad(){
         log.info("测试插件加载");
-        eventChannel.registerEventClass(new Event(this));
+
     }
 
     @Override
     public void onEnable() {
         log.info("测试插件启动");
+        eventChannel.registerEventClass(new Event(this));
     }
 
     @Override
