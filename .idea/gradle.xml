@@ -8,9 +8,9 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../kaiheila_bot_framework" />
+            <option value="$PROJECT_DIR$/../../kaiheila_bot_framework" />
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/../kaiheila_bot_sdk" />
+            <option value="$PROJECT_DIR$/../../kaiheila_bot_sdk" />
           </set>
         </option>
       </GradleProjectSettings>

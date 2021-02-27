@@ -1,4 +1,4 @@
-package top.bruned.kaiheila.plugin;
+package top.bruned.kaiheila.plugin.echo;
 
 import top.bruned.kaiheila.framework.plugin.JavaPlugin;
 import top.bruned.kaiheila.framework.plugin.annotation.PluginINFO;

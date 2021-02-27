@@ -1,8 +1,9 @@
-package top.bruned.kaiheila.plugin;
+package top.bruned.kaiheila.plugin.echo;
 
+import top.bruned.kaiheila.framework.plugin.EventClass;
 import top.bruned.kaiheila.framework.plugin.annotation.EventHandler;
-import top.bruned.kaiheila.framework.plugin.loader.EventClass;
-import top.bruned.kaiheila.sdk.wsclient.result.event.GroupMessageEvent.GroupMessageEvent;
+
+import top.bruned.kaiheila.sdk.wsclient.result.event.GroupTextMessageEvent.GroupTextMessageEvent;
 
 public class Event extends EventClass {
     public Event(plugin plugin) {
@@ -11,7 +12,7 @@ public class Event extends EventClass {
     }
 
     @EventHandler
-    public void onGroupMessage(GroupMessageEvent event){
+    public void onGrouptextMessage(GroupTextMessageEvent event){
         if (event.getContent().startsWith("/复读 ")&&!event.getContent().substring(4).trim().isEmpty()){
             bot.api.Message_create(event.getTarget_id(), event.getContent().substring(4).trim());
         }
