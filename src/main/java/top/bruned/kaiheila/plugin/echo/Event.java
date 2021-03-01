@@ -12,7 +12,7 @@ public class Event extends EventClass {
     }
 
     @EventHandler
-    public void onGrouptextMessage(GroupTextMessageEvent event){
+    public void onGroupTextMessage(GroupTextMessageEvent event){
         if (event.getContent().startsWith("/复读 ")&&!event.getContent().substring(4).trim().isEmpty()){
             bot.api.Message_create(event.getTarget_id(), event.getContent().substring(4).trim());
         }

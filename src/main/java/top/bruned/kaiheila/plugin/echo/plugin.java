@@ -3,7 +3,7 @@ package top.bruned.kaiheila.plugin.echo;
 import top.bruned.kaiheila.framework.plugin.JavaPlugin;
 import top.bruned.kaiheila.framework.plugin.annotation.PluginINFO;
 
-@PluginINFO(PluginName = "TestPlugin",Version = "0.0.0",Author = "bruned")
+@PluginINFO(PluginName = "EchoPlugin",Version = "0.0.0",Author = "bruned")
 public class plugin extends JavaPlugin {
     @Override
     public void onLoad(){
